@@ -15,6 +15,7 @@ interface Post {
   tags: string[];
   summary: string;
   date: string;
+  externalLink?: string;
 }
 
 interface Video {
@@ -25,6 +26,17 @@ interface Video {
   platform: string;
   url: string;
   notes: string;
+}
+
+interface Topic {
+  name: string;
+  difficulty: number;
+  tips: string[];
+}
+
+interface TopicData {
+  subject: string;
+  topics: Topic[];
 }
 
 interface Snippet {
@@ -130,6 +142,46 @@ const StudyHub = () => {
   const [currentView, setCurrentView] = useState('home');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [videos, setVideos] = useState<Video[]>([]);
+  const [snippets, setSnippets] = useState<Snippet[]>([]);
+  const [topics, setTopics] = useState<TopicData[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  // Load data on mount
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const [postsRes, videosRes, snippetsRes, topicsRes] = await Promise.all([
+          fetch('/data/posts.json'),
+          fetch('/data/videos.json'),
+          fetch('/data/snippets.json'),
+          fetch('/data/topics.json')
+        ]);
+
+        const postsData = await postsRes.json();
+        const videosData = await videosRes.json();
+        const snippetsData = await snippetsRes.json();
+        const topicsData = await topicsRes.json();
+
+        setPosts(postsData.posts || samplePosts);
+        setVideos(videosData.videos || sampleVideos);
+        setSnippets(snippetsData.snippets || sampleSnippets);
+        setTopics(topicsData.subjects || []);
+      } catch (error) {
+        console.error('Failed to load data:', error);
+        // Fallback to sample data
+        setPosts(samplePosts);
+        setVideos(sampleVideos);
+        setSnippets(sampleSnippets);
+        setTopics([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadData();
+  }, []);
 
   // Simple router
   useEffect(() => {
@@ -164,14 +216,14 @@ const StudyHub = () => {
 
   const getStats = () => {
     const totalPosts = selectedSubject ? 
-      samplePosts.filter(p => p.subject === selectedSubject).length : 
-      samplePosts.length;
+      posts.filter(p => p.subject === selectedSubject).length : 
+      posts.length;
     const totalVideos = selectedSubject ?
-      sampleVideos.filter(v => v.subject === selectedSubject).length :
-      sampleVideos.length;
+      videos.filter(v => v.subject === selectedSubject).length :
+      videos.length;
     const totalSnippets = selectedSubject ?
-      sampleSnippets.filter(s => s.subject === selectedSubject).length :
-      sampleSnippets.length;
+      snippets.filter(s => s.subject === selectedSubject).length :
+      snippets.length;
     
     return { totalPosts, totalVideos, totalSnippets };
   };
@@ -201,10 +253,13 @@ const StudyHub = () => {
             <p className="text-gray-400 mb-4">{subject.description}</p>
             <div className="flex gap-2 text-sm">
               <span className="px-2 py-1 bg-black/20 rounded">
-                {samplePosts.filter(p => p.subject === subject.name).length} posts
+                {posts.filter(p => p.subject === subject.name).length} posts
               </span>
               <span className="px-2 py-1 bg-black/20 rounded">
-                {sampleSnippets.filter(s => s.subject === subject.name).length} snippets
+                {videos.filter(v => v.subject === subject.name).length} videos
+              </span>
+              <span className="px-2 py-1 bg-black/20 rounded">
+                {snippets.filter(s => s.subject === subject.name).length} snippets
               </span>
             </div>
           </div>
@@ -215,10 +270,20 @@ const StudyHub = () => {
         <div className="study-card">
           <h3 className="text-xl font-semibold mb-4">Recent Posts</h3>
           <div className="space-y-3">
-            {samplePosts.slice(0, 3).map(post => (
+            {posts.slice(0, 3).map(post => (
               <div key={post.id} className="p-3 bg-gray-800/50 rounded-lg hover:bg-gray-800/70 transition-colors cursor-pointer">
                 <h4 className="font-medium">{post.title}</h4>
                 <p className="text-sm text-gray-400">{post.subject} • {post.date}</p>
+                {'externalLink' in post && (
+                  <a 
+                    href={post.externalLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs text-cyan-400 hover:text-cyan-300"
+                  >
+                    Read more →
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -271,13 +336,23 @@ const StudyHub = () => {
     <div className="max-w-4xl mx-auto">
       <h2 className="text-3xl font-bold mb-8">Blog Posts</h2>
       <div className="space-y-6">
-        {filterContent(samplePosts, searchQuery, selectedSubject).map(post => (
+        {filterContent(posts, searchQuery, selectedSubject).map(post => (
           <div key={post.id} className="study-card">
             <div className="flex justify-between items-start mb-3">
               <h3 className="text-xl font-semibold">{post.title}</h3>
               <span className="text-sm text-gray-400">{post.date}</span>
             </div>
             <p className="text-gray-300 mb-3">{post.summary}</p>
+            {'externalLink' in post && (
+              <a 
+                href={post.externalLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 mb-3"
+              >
+                Read full article →
+              </a>
+            )}
             <div className="flex gap-2 flex-wrap">
               <span className={`px-2 py-1 text-xs rounded subject-${subjects.find(s => s.name === post.subject)?.color}`}>
                 {post.subject}
@@ -298,10 +373,23 @@ const StudyHub = () => {
     <div className="max-w-4xl mx-auto">
       <h2 className="text-3xl font-bold mb-8">Video Tutorials</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {filterContent(sampleVideos, searchQuery, selectedSubject).map(video => (
+        {filterContent(videos, searchQuery, selectedSubject).map(video => (
           <div key={video.id} className="study-card">
-            <div className="aspect-video bg-gray-800 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-500">Video Player</span>
+            <div className="aspect-video bg-gray-800 rounded-lg mb-4 overflow-hidden">
+              {video.url.includes('youtube.com') ? (
+                <iframe
+                  src={video.url.replace('watch?v=', 'embed/')}
+                  title={video.title}
+                  className="w-full h-full"
+                  allowFullScreen
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-gray-500">
+                  <a href={video.url} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">
+                    Watch Video →
+                  </a>
+                </div>
+              )}
             </div>
             <h3 className="text-lg font-semibold mb-2">{video.title}</h3>
             <p className="text-gray-400 text-sm mb-3">{video.notes}</p>
@@ -325,7 +413,7 @@ const StudyHub = () => {
     <div className="max-w-4xl mx-auto">
       <h2 className="text-3xl font-bold mb-8">Code Snippets</h2>
       <div className="space-y-6">
-        {filterContent(sampleSnippets, searchQuery, selectedSubject).map(snippet => (
+        {filterContent(snippets, searchQuery, selectedSubject).map(snippet => (
           <div key={snippet.id} className="study-card">
             <div className="flex justify-between items-start mb-3">
               <h3 className="text-lg font-semibold">{snippet.title}</h3>
@@ -448,7 +536,79 @@ const StudyHub = () => {
     </div>
   );
 
+  const renderTopics = () => {
+    const subjectTopics = topics.find(t => t.subject === selectedSubject)?.topics || [];
+    const sortedTopics = subjectTopics.sort((a, b) => a.difficulty - b.difficulty);
+
+    return (
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8">
+          {selectedSubject} Topics by Difficulty
+        </h2>
+        <div className="space-y-4">
+          {sortedTopics.map((topic, index) => (
+            <div key={topic.name} className="study-card">
+              <div className="flex items-center gap-3 mb-3">
+                <h3 className="text-xl font-semibold">{topic.name}</h3>
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <div
+                      key={i}
+                      className={`w-2 h-2 rounded-full ${
+                        i < topic.difficulty ? 'bg-cyan-400' : 'bg-gray-600'
+                      }`}
+                    />
+                  ))}
+                  <span className="text-sm text-gray-400 ml-2">
+                    Level {topic.difficulty}
+                  </span>
+                </div>
+              </div>
+              <div className="mb-3">
+                <h4 className="text-sm font-medium text-gray-300 mb-2">Study Tips:</h4>
+                <ul className="space-y-1">
+                  {topic.tips.map((tip, tipIndex) => (
+                    <li key={tipIndex} className="text-sm text-gray-400 flex items-start gap-2">
+                      <span className="text-cyan-400 mt-1">•</span>
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <button
+                className="btn btn-primary text-sm"
+                onClick={() => {
+                  setSearchQuery(topic.name);
+                  navigate('blog');
+                }}
+              >
+                Find Resources
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
   const renderContent = () => {
+    if (loading) {
+      return (
+        <div className="flex items-center justify-center min-h-[400px]">
+          <div className="text-gray-400">Loading...</div>
+        </div>
+      );
+    }
+
+    if (currentView.startsWith('subject/')) {
+      const subject = currentView.split('/')[1];
+      const subjectData = subjects.find(s => s.id === subject);
+      if (subjectData) {
+        setSelectedSubject(subjectData.name);
+        return renderTopics();
+      }
+    }
+
     switch (currentView) {
       case 'blog': return renderBlog();
       case 'videos': return renderVideos();

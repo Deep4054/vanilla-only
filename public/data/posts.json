@@ -1,0 +1,157 @@
+{
+  "posts": [
+    {
+      "id": "java-oop-geeks",
+      "title": "Object Oriented Programming in Java - GeeksforGeeks",
+      "subject": "Java",
+      "tags": ["OOP", "concepts"],
+      "summary": "Comprehensive guide to OOP principles in Java with examples",
+      "externalLink": "https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/",
+      "date": "2025-01-15"
+    },
+    {
+      "id": "java-collections-baeldung",
+      "title": "Java Collections Framework Guide - Baeldung",
+      "subject": "Java",
+      "tags": ["collections", "framework"],
+      "summary": "Deep dive into Java Collections with practical examples",
+      "externalLink": "https://www.baeldung.com/java-collections",
+      "date": "2025-01-10"
+    },
+    {
+      "id": "java-streams-baeldung",
+      "title": "Java 8 Streams API Tutorial - Baeldung",
+      "subject": "Java",
+      "tags": ["streams", "functional"],
+      "summary": "Complete guide to Java Streams for functional programming",
+      "externalLink": "https://www.baeldung.com/java-8-streams",
+      "date": "2025-01-05"
+    },
+    {
+      "id": "dsa-arrays-geeks",
+      "title": "Array Data Structure - GeeksforGeeks",
+      "subject": "DSA",
+      "tags": ["arrays", "basics"],
+      "summary": "Fundamental operations and algorithms on arrays",
+      "externalLink": "https://www.geeksforgeeks.org/array-data-structure/",
+      "date": "2025-01-12"
+    },
+    {
+      "id": "dsa-sorting-geeks",
+      "title": "Sorting Algorithms - GeeksforGeeks",
+      "subject": "DSA",
+      "tags": ["sorting", "algorithms"],
+      "summary": "Comparison of different sorting algorithms with complexity analysis",
+      "externalLink": "https://www.geeksforgeeks.org/sorting-algorithms/",
+      "date": "2025-01-08"
+    },
+    {
+      "id": "dsa-problems-leetcode",
+      "title": "Top 75 LeetCode Problems - LeetCode Blog",
+      "subject": "DSA",
+      "tags": ["problems", "interview"],
+      "summary": "Curated list of essential coding interview problems",
+      "externalLink": "https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions",
+      "date": "2025-01-03"
+    },
+    {
+      "id": "dcn-osi-tutorials",
+      "title": "OSI Model Layers Explained - TutorialsPoint",
+      "subject": "DCN",
+      "tags": ["OSI", "layers"],
+      "summary": "Layer-by-layer breakdown of the OSI networking model",
+      "externalLink": "https://www.tutorialspoint.com/data_communication_computer_network/network_models.htm",
+      "date": "2025-01-14"
+    },
+    {
+      "id": "dcn-tcp-geeks",
+      "title": "TCP/IP Protocol Suite - GeeksforGeeks",
+      "subject": "DCN",
+      "tags": ["TCP", "IP", "protocols"],
+      "summary": "Understanding TCP/IP protocols and their implementation",
+      "externalLink": "https://www.geeksforgeeks.org/tcp-ip-model/",
+      "date": "2025-01-09"
+    },
+    {
+      "id": "python-pandas-towards",
+      "title": "Pandas Data Analysis Tutorial - Towards Data Science",
+      "subject": "DAPY",
+      "tags": ["pandas", "analysis"],
+      "summary": "Comprehensive guide to data manipulation with pandas",
+      "externalLink": "https://towardsdatascience.com/pandas-tutorial-data-analysis-with-python-8b91ece2d93c",
+      "date": "2025-01-11"
+    },
+    {
+      "id": "python-visualization-analytics",
+      "title": "Data Visualization with Python - Analytics Vidhya",
+      "subject": "DAPY",
+      "tags": ["visualization", "matplotlib"],
+      "summary": "Creating compelling visualizations with Python libraries",
+      "externalLink": "https://www.analyticsvidhya.com/blog/2020/02/beginner-guide-matplotlib-data-visualization-exploration-python/",
+      "date": "2025-01-06"
+    },
+    {
+      "id": "python-numpy-towards",
+      "title": "NumPy for Data Science - Towards Data Science",
+      "subject": "DAPY",
+      "tags": ["numpy", "arrays"],
+      "summary": "Essential NumPy operations for data science workflows",
+      "externalLink": "https://towardsdatascience.com/numpy-tutorial-for-beginners-2020-edition-8b92b8b5d4b9",
+      "date": "2025-01-02"
+    },
+    {
+      "id": "ai-ml-deeplearning",
+      "title": "Introduction to Machine Learning - DeepLearning.AI",
+      "subject": "AI",
+      "tags": ["machine learning", "basics"],
+      "summary": "Foundational concepts in machine learning and AI",
+      "externalLink": "https://www.deeplearning.ai/blog/what-is-machine-learning/",
+      "date": "2025-01-13"
+    },
+    {
+      "id": "ai-neural-openai",
+      "title": "Neural Networks Explained - OpenAI Blog",
+      "subject": "AI",
+      "tags": ["neural networks", "deep learning"],
+      "summary": "Understanding how neural networks learn and process information",
+      "externalLink": "https://openai.com/blog/",
+      "date": "2025-01-07"
+    },
+    {
+      "id": "ai-transformers-huggingface",
+      "title": "Transformer Models Guide - Hugging Face",
+      "subject": "AI",
+      "tags": ["transformers", "NLP"],
+      "summary": "Modern transformer architecture for natural language processing",
+      "externalLink": "https://huggingface.co/course/chapter1/1",
+      "date": "2025-01-01"
+    },
+    {
+      "id": "web-html-mdn",
+      "title": "HTML Fundamentals - MDN Web Docs",
+      "subject": "WT",
+      "tags": ["HTML", "basics"],
+      "summary": "Complete guide to semantic HTML and web standards",
+      "externalLink": "https://developer.mozilla.org/en-US/docs/Learn/HTML",
+      "date": "2025-01-10"
+    },
+    {
+      "id": "web-css-mdn",
+      "title": "CSS Layout Techniques - MDN Web Docs",
+      "subject": "WT",
+      "tags": ["CSS", "layout"],
+      "summary": "Modern CSS layout methods: Grid, Flexbox, and more",
+      "externalLink": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout",
+      "date": "2025-01-05"
+    },
+    {
+      "id": "web-js-w3schools",
+      "title": "JavaScript ES6+ Features - W3Schools",
+      "subject": "WT",
+      "tags": ["JavaScript", "ES6"],
+      "summary": "Modern JavaScript features and best practices",
+      "externalLink": "https://www.w3schools.com/js/js_es6.asp",
+      "date": "2025-01-01"
+    }
+  ]
+}

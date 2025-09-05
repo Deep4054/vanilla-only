@@ -1,0 +1,244 @@
+{
+  "subjects": [
+    {
+      "subject": "Java",
+      "topics": [
+        {
+          "name": "Basic Syntax",
+          "difficulty": 1,
+          "tips": ["Start with variables and data types", "Practice console output first", "Learn naming conventions early"]
+        },
+        {
+          "name": "Object-Oriented Programming",
+          "difficulty": 2,
+          "tips": ["Write 3 small classes with inheritance daily", "Practice encapsulation with getters/setters", "Understand the 'is-a' vs 'has-a' relationship"]
+        },
+        {
+          "name": "Collections Framework",
+          "difficulty": 3,
+          "tips": ["Master ArrayList before moving to LinkedList", "Understand when to use Set vs List", "Practice iteration patterns"]
+        },
+        {
+          "name": "Exception Handling",
+          "difficulty": 3,
+          "tips": ["Always close resources in finally block", "Create custom exceptions for practice", "Understand checked vs unchecked exceptions"]
+        },
+        {
+          "name": "Multithreading",
+          "difficulty": 4,
+          "tips": ["Start with simple Runnable examples", "Understand synchronization before advanced topics", "Practice producer-consumer pattern"]
+        },
+        {
+          "name": "Streams API",
+          "difficulty": 4,
+          "tips": ["Think functionally, not imperatively", "Practice map-filter-reduce patterns", "Understand lazy evaluation concepts"]
+        },
+        {
+          "name": "Spring Framework",
+          "difficulty": 5,
+          "tips": ["Master dependency injection first", "Build small REST APIs for practice", "Understand Spring Boot auto-configuration"]
+        }
+      ]
+    },
+    {
+      "subject": "DSA",
+      "topics": [
+        {
+          "name": "Arrays",
+          "difficulty": 1,
+          "tips": ["Master basic operations first", "Practice GFG easy problems", "Understand time complexity of operations"]
+        },
+        {
+          "name": "Strings",
+          "difficulty": 1,
+          "tips": ["Learn string manipulation methods", "Practice pattern matching problems", "Understand immutability concepts"]
+        },
+        {
+          "name": "Linked Lists",
+          "difficulty": 2,
+          "tips": ["Draw pointers on paper first", "Practice reversing operations", "Master two-pointer technique"]
+        },
+        {
+          "name": "Stacks and Queues",
+          "difficulty": 2,
+          "tips": ["Understand LIFO vs FIFO clearly", "Practice expression evaluation problems", "Learn deque implementation"]
+        },
+        {
+          "name": "Binary Trees",
+          "difficulty": 3,
+          "tips": ["Draw recursion tree for understanding", "Revise all traversal variants", "Practice level-order traversal"]
+        },
+        {
+          "name": "Graphs",
+          "difficulty": 4,
+          "tips": ["Practice drawing graphs on paper before coding", "Master BFS and DFS first", "Understand adjacency representations"]
+        },
+        {
+          "name": "Dynamic Programming",
+          "difficulty": 5,
+          "tips": ["Start with simple memoization", "Identify overlapping subproblems", "Practice bottom-up approach"]
+        }
+      ]
+    },
+    {
+      "subject": "DCN",
+      "topics": [
+        {
+          "name": "Network Fundamentals",
+          "difficulty": 1,
+          "tips": ["Understand client-server model", "Learn basic network topologies", "Grasp bandwidth vs latency concepts"]
+        },
+        {
+          "name": "OSI Model",
+          "difficulty": 2,
+          "tips": ["Summarize each layer in one sentence", "Use mnemonics for layer names", "Understand data flow between layers"]
+        },
+        {
+          "name": "TCP/IP Protocol Suite",
+          "difficulty": 3,
+          "tips": ["Compare with OSI model", "Understand 3-way handshake", "Practice packet header analysis"]
+        },
+        {
+          "name": "Routing Algorithms",
+          "difficulty": 3,
+          "tips": ["Draw network diagrams for algorithms", "Understand distance vector vs link state", "Practice shortest path calculations"]
+        },
+        {
+          "name": "Error Detection and Correction",
+          "difficulty": 4,
+          "tips": ["Practice checksum calculations", "Understand parity bit concepts", "Learn Hamming code basics"]
+        },
+        {
+          "name": "Network Security",
+          "difficulty": 4,
+          "tips": ["Understand encryption basics", "Learn common attack vectors", "Practice firewall configuration concepts"]
+        },
+        {
+          "name": "Network Performance",
+          "difficulty": 5,
+          "tips": ["Analyze throughput vs bandwidth", "Understand congestion control", "Practice network optimization techniques"]
+        }
+      ]
+    },
+    {
+      "subject": "DAPY",
+      "topics": [
+        {
+          "name": "Python Basics",
+          "difficulty": 1,
+          "tips": ["Practice list comprehensions daily", "Master dictionary operations", "Understand Python's dynamic typing"]
+        },
+        {
+          "name": "NumPy Arrays",
+          "difficulty": 2,
+          "tips": ["Think vectorized, not loops", "Practice array broadcasting", "Understand memory layout concepts"]
+        },
+        {
+          "name": "Pandas DataFrames",
+          "difficulty": 2,
+          "tips": ["Master filtering and selection", "Practice merge and join operations", "Understand groupby patterns"]
+        },
+        {
+          "name": "Data Cleaning",
+          "difficulty": 3,
+          "tips": ["Handle missing values systematically", "Learn regex for text cleaning", "Practice outlier detection methods"]
+        },
+        {
+          "name": "Data Visualization",
+          "difficulty": 3,
+          "tips": ["Choose right chart for data type", "Practice matplotlib customization", "Learn seaborn for statistical plots"]
+        },
+        {
+          "name": "Statistical Analysis",
+          "difficulty": 4,
+          "tips": ["Understand descriptive vs inferential", "Practice hypothesis testing", "Learn correlation vs causation"]
+        },
+        {
+          "name": "Machine Learning Integration",
+          "difficulty": 5,
+          "tips": ["Master feature engineering", "Understand train-test split", "Practice model evaluation metrics"]
+        }
+      ]
+    },
+    {
+      "subject": "AI",
+      "topics": [
+        {
+          "name": "AI Fundamentals",
+          "difficulty": 1,
+          "tips": ["Understand narrow vs general AI", "Learn problem-solving approaches", "Grasp search algorithms basics"]
+        },
+        {
+          "name": "Machine Learning Basics",
+          "difficulty": 2,
+          "tips": ["Understand supervised vs unsupervised", "Practice with simple datasets", "Learn evaluation metrics"]
+        },
+        {
+          "name": "Neural Networks",
+          "difficulty": 3,
+          "tips": ["Start with perceptron model", "Understand gradient descent", "Practice backpropagation manually"]
+        },
+        {
+          "name": "Deep Learning",
+          "difficulty": 4,
+          "tips": ["Master CNN for images first", "Understand overfitting prevention", "Practice with frameworks like TensorFlow"]
+        },
+        {
+          "name": "Natural Language Processing",
+          "difficulty": 4,
+          "tips": ["Start with text preprocessing", "Understand tokenization concepts", "Practice sentiment analysis"]
+        },
+        {
+          "name": "Computer Vision",
+          "difficulty": 5,
+          "tips": ["Learn image preprocessing techniques", "Understand convolution operations", "Practice object detection"]
+        },
+        {
+          "name": "Advanced AI Topics",
+          "difficulty": 5,
+          "tips": ["Explore reinforcement learning", "Understand transformer architecture", "Study AI ethics and bias"]
+        }
+      ]
+    },
+    {
+      "subject": "WT",
+      "topics": [
+        {
+          "name": "HTML Fundamentals",
+          "difficulty": 1,
+          "tips": ["Focus on semantic HTML first", "Practice form validation", "Learn accessibility basics"]
+        },
+        {
+          "name": "CSS Styling",
+          "difficulty": 2,
+          "tips": ["Master flexbox before grid", "Practice responsive design", "Understand CSS specificity"]
+        },
+        {
+          "name": "JavaScript Basics",
+          "difficulty": 2,
+          "tips": ["Understand event handling", "Practice DOM manipulation", "Learn async/await patterns"]
+        },
+        {
+          "name": "Frontend Frameworks",
+          "difficulty": 3,
+          "tips": ["Master one framework deeply", "Understand component lifecycle", "Practice state management"]
+        },
+        {
+          "name": "Backend Development",
+          "difficulty": 4,
+          "tips": ["Learn REST API design", "Understand database integration", "Practice authentication patterns"]
+        },
+        {
+          "name": "Web Performance",
+          "difficulty": 4,
+          "tips": ["Optimize images and assets", "Understand lazy loading", "Practice code splitting"]
+        },
+        {
+          "name": "Full-Stack Applications",
+          "difficulty": 5,
+          "tips": ["Plan architecture before coding", "Implement proper error handling", "Practice deployment strategies"]
+        }
+      ]
+    }
+  ]
+}
