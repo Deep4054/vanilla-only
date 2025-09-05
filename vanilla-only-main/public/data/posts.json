@@ -1,0 +1,264 @@
+{
+  "posts": [
+    {
+      "id": "java-oop-basics",
+      "title": "Java OOP Basics for Beginners - W3Schools",
+      "subject": "Java",
+      "tags": [
+        "OOP",
+        "basics",
+        "fundamentals"
+      ],
+      "summary": "Perfect starting point for understanding Java OOP concepts with simple examples",
+      "externalLink": "https://www.w3schools.com/java/java_oop.asp",
+      "date": "2025-01-15"
+    },
+    {
+      "id": "java-syntax-basics",
+      "title": "Java Basic Syntax Tutorial - JavaTpoint",
+      "subject": "Java",
+      "tags": [
+        "syntax",
+        "beginners",
+        "fundamentals"
+      ],
+      "summary": "Essential Java syntax and structure for exam preparation",
+      "externalLink": "https://www.javatpoint.com/java-basic-syntax",
+      "date": "2025-01-14"
+    },
+    {
+      "id": "java-data-types",
+      "title": "Java Data Types and Variables - GeeksforGeeks",
+      "subject": "Java",
+      "tags": [
+        "data types",
+        "variables",
+        "basics"
+      ],
+      "summary": "Comprehensive guide to Java data types, variables and type conversion",
+      "externalLink": "https://www.geeksforgeeks.org/data-types-in-java/",
+      "date": "2025-01-13"
+    },
+    {
+      "id": "java-control-flow",
+      "title": "Java Control Flow Statements - Baeldung",
+      "subject": "Java",
+      "tags": [
+        "control flow",
+        "loops",
+        "conditionals"
+      ],
+      "summary": "Understanding if-else, switch, for, while and do-while loops in Java",
+      "externalLink": "https://www.baeldung.com/java-control-structures",
+      "date": "2025-01-12"
+    },
+    {
+      "id": "java-methods",
+      "title": "Java Methods Explained - Programiz",
+      "subject": "Java",
+      "tags": [
+        "methods",
+        "functions",
+        "basics"
+      ],
+      "summary": "Learn how to create and use methods/functions in Java",
+      "externalLink": "https://www.programiz.com/java-programming/methods",
+      "date": "2025-01-11"
+    },
+    {
+      "id": "java-oop-geeks",
+      "title": "Object Oriented Programming in Java - GeeksforGeeks",
+      "subject": "Java",
+      "tags": [
+        "OOP",
+        "concepts",
+        "intermediate"
+      ],
+      "summary": "Comprehensive guide to OOP principles in Java with examples",
+      "externalLink": "https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/",
+      "date": "2025-01-10"
+    },
+    {
+      "id": "java-collections-baeldung",
+      "title": "Java Collections Framework Guide - Baeldung",
+      "subject": "Java",
+      "tags": [
+        "collections",
+        "framework",
+        "intermediate"
+      ],
+      "summary": "Deep dive into Java Collections with practical examples",
+      "externalLink": "https://www.baeldung.com/java-collections",
+      "date": "2025-01-09"
+    },
+    {
+      "id": "dsa-arrays-basics",
+      "title": "Arrays Introduction for Beginners - GeeksforGeeks",
+      "subject": "DSA",
+      "tags": [
+        "arrays",
+        "basics",
+        "fundamentals"
+      ],
+      "summary": "Fundamental operations and algorithms on arrays",
+      "externalLink": "https://www.geeksforgeeks.org/array-data-structure/",
+      "date": "2025-01-08"
+    },
+    {
+      "id": "dsa-linked-lists",
+      "title": "Linked Lists Explained - Programiz",
+      "subject": "DSA",
+      "tags": [
+        "linked lists",
+        "data structures",
+        "basics"
+      ],
+      "summary": "Introduction to linked lists and basic operations",
+      "externalLink": "https://www.programiz.com/dsa/linked-list",
+      "date": "2025-01-07"
+    },
+    {
+      "id": "dsa-stacks-queues",
+      "title": "Stacks and Queues - GeeksforGeeks",
+      "subject": "DSA",
+      "tags": [
+        "stacks",
+        "queues",
+        "data structures"
+      ],
+      "summary": "Fundamental concepts of stacks and queues with implementations",
+      "externalLink": "https://www.geeksforgeeks.org/stack-data-structure/",
+      "date": "2025-01-06"
+    },
+    {
+      "id": "dsa-sorting-basics",
+      "title": "Sorting Algorithms Basics - GeeksforGeeks",
+      "subject": "DSA",
+      "tags": [
+        "sorting",
+        "algorithms",
+        "fundamentals"
+      ],
+      "summary": "Basic sorting algorithms with complexity analysis",
+      "externalLink": "https://www.geeksforgeeks.org/sorting-algorithms/",
+      "date": "2025-01-05"
+    },
+    {
+      "id": "dsa-searching",
+      "title": "Searching Algorithms - GeeksforGeeks",
+      "subject": "DSA",
+      "tags": [
+        "searching",
+        "algorithms",
+        "basics"
+      ],
+      "summary": "Linear and binary search algorithms explained",
+      "externalLink": "https://www.geeksforgeeks.org/searching-algorithms/",
+      "date": "2025-01-04"
+    },
+    {
+      "id": "web-html-basics",
+      "title": "HTML Basics for Beginners - MDN Web Docs",
+      "subject": "WT",
+      "tags": [
+        "HTML",
+        "basics",
+        "fundamentals"
+      ],
+      "summary": "Complete guide to semantic HTML and web standards",
+      "externalLink": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started",
+      "date": "2025-01-03"
+    },
+    {
+      "id": "web-css-basics",
+      "title": "CSS Fundamentals - MDN Web Docs",
+      "subject": "WT",
+      "tags": [
+        "CSS",
+        "basics",
+        "styling"
+      ],
+      "summary": "Introduction to CSS styling and selectors",
+      "externalLink": "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps",
+      "date": "2025-01-02"
+    },
+    {
+      "id": "web-js-basics",
+      "title": "JavaScript Basics - W3Schools",
+      "subject": "WT",
+      "tags": [
+        "JavaScript",
+        "basics",
+        "fundamentals"
+      ],
+      "summary": "JavaScript fundamentals for web development",
+      "externalLink": "https://www.w3schools.com/js/js_intro.asp",
+      "date": "2025-01-01"
+    },
+    {
+      "id": "python-basics",
+      "title": "Python Programming Basics - Python.org",
+      "subject": "DAPY",
+      "tags": [
+        "python",
+        "basics",
+        "fundamentals"
+      ],
+      "summary": "Official Python tutorial for beginners",
+      "externalLink": "https://docs.python.org/3/tutorial/index.html",
+      "date": "2024-12-31"
+    },
+    {
+      "id": "python-data-structures",
+      "title": "Python Data Structures - GeeksforGeeks",
+      "subject": "DAPY",
+      "tags": [
+        "python",
+        "data structures",
+        "basics"
+      ],
+      "summary": "Lists, tuples, dictionaries and sets in Python",
+      "externalLink": "https://www.geeksforgeeks.org/python-data-structures/",
+      "date": "2024-12-30"
+    },
+    {
+      "id": "dbms-basics",
+      "title": "Database Management System Basics - GeeksforGeeks",
+      "subject": "DBMS",
+      "tags": [
+        "database",
+        "basics",
+        "fundamentals"
+      ],
+      "summary": "Introduction to DBMS concepts and SQL",
+      "externalLink": "https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/",
+      "date": "2024-12-29"
+    },
+    {
+      "id": "sql-basics",
+      "title": "SQL Tutorial - W3Schools",
+      "subject": "DBMS",
+      "tags": [
+        "SQL",
+        "database",
+        "basics"
+      ],
+      "summary": "Learn basic SQL commands and queries",
+      "externalLink": "https://www.w3schools.com/sql/",
+      "date": "2024-12-28"
+    },
+    {
+      "id": "os-basics",
+      "title": "Operating System Introduction - GeeksforGeeks",
+      "subject": "OS",
+      "tags": [
+        "operating system",
+        "basics",
+        "fundamentals"
+      ],
+      "summary": "Introduction to operating system concepts and functions",
+      "externalLink": "https://www.geeksforgeeks.org/operating-systems/",
+      "date": "2024-12-27"
+    }
+  ]
+}

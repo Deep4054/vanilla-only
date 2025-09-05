@@ -1,0 +1,424 @@
+{
+  "studyGuide": {
+    "name": "Comprehensive Exam Preparation Plan - Basic to Advanced",
+    "description": "A structured, priority-wise plan covering all subjects for exam preparation. Topics are ordered logically for optimal learning.",
+    "subjects": [
+      {
+        "subject": "DSA",
+        "priority": 1,
+        "description": "The foundation for coding interviews and problem-solving. Mastery is crucial.",
+        "studyFlow": [
+          {
+            "phase": "Phase 1: Foundation (Weeks 1-2)",
+            "topics": [
+              {
+                "name": "Arrays",
+                "difficulty": 1,
+                "resources": [
+                  "dsa-arrays-stiver"
+                ],
+                "tips": [
+                  "Master basic operations first. Focus on problems involving traversal, searching, and two-pointer techniques."
+                ]
+              },
+              {
+                "name": "Strings",
+                "difficulty": 1,
+                "resources": [
+                  "dsa-strings-stiver"
+                ],
+                "tips": [
+                  "Practice string manipulation and pattern matching. Understand immutability in Java."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 2: Linear Data Structures (Weeks 3-4)",
+            "topics": [
+              {
+                "name": "Linked Lists",
+                "difficulty": 2,
+                "resources": [
+                  "dsa-linkedlist-stiver"
+                ],
+                "tips": [
+                  "Draw diagrams for pointer manipulation. Master reversing, cycles, and merges."
+                ]
+              },
+              {
+                "name": "Stacks and Queues",
+                "difficulty": 2,
+                "resources": [
+                  "dsa-stack-queue-stiver"
+                ],
+                "tips": [
+                  "Understand LIFO vs FIFO. Practice problems like 'Next Greater Element' and 'Sliding Window'."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 3: Core Algorithms (Weeks 5-7)",
+            "topics": [
+              {
+                "name": "Recursion & Backtracking",
+                "difficulty": 3,
+                "resources": [
+                  "dsa-recursion-stiver"
+                ],
+                "tips": [
+                  "Start with simple problems like Fibonacci. Visualize the recursion tree for backtracking."
+                ]
+              },
+              {
+                "name": "Binary Trees & BST",
+                "difficulty": 3,
+                "resources": [
+                  "dsa-trees-stiver",
+                  "dsa-bst-stiver"
+                ],
+                "tips": [
+                  "Memorize all traversal orders (In, Pre, Post, Level). Practice BST validation and operations."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 4: Advanced Concepts (Weeks 8-10)",
+            "topics": [
+              {
+                "name": "Graphs",
+                "difficulty": 4,
+                "resources": [
+                  "dsa-graphs-stiver"
+                ],
+                "tips": [
+                  "Master BFS and DFS implementations. Then move to Shortest Path (Dijkstra) and MST algorithms."
+                ]
+              },
+              {
+                "name": "Heap / Priority Queue",
+                "difficulty": 3,
+                "resources": [
+                  "dsa-heap-stiver"
+                ],
+                "tips": [
+                  "Understand min-heap vs max-heap. Essential for problems asking for 'Top K' or 'Kth Largest' elements."
+                ]
+              },
+              {
+                "name": "Trie",
+                "difficulty": 4,
+                "resources": [
+                  "dsa-trie-stiver"
+                ],
+                "tips": [
+                  "Crucial for string-based search problems. Practice 'Auto-complete' and 'Word Search' type problems."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 5: Mastery (Ongoing Practice)",
+            "topics": [
+              {
+                "name": "Dynamic Programming",
+                "difficulty": 5,
+                "resources": [
+                  "dsa-dp-stiver"
+                ],
+                "tips": [
+                  "**HIGH PRIORITY FOR EXAMS**. Follow Striver's DP series order. Start with Fibonacci, then 0/1 Knapsack, LCS, etc. Practice identifying patterns."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "Java",
+        "priority": 2,
+        "description": "Core language skills and modern frameworks. Important for backend development roles.",
+        "studyFlow": [
+          {
+            "phase": "Phase 1: Core Java (Week 1)",
+            "topics": [
+              {
+                "name": "Basic Syntax & OOP",
+                "difficulty": 1,
+                "resources": [
+                  "java-oop-mosh"
+                ],
+                "tips": [
+                  "Solidify OOP principles: Inheritance, Polymorphism, Encapsulation, Abstraction. Write small programs to demonstrate each."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 2: Java APIs (Week 2)",
+            "topics": [
+              {
+                "name": "Collections Framework",
+                "difficulty": 3,
+                "tips": [
+                  "Know the hierarchy. Understand when to use ArrayList vs LinkedList, HashMap vs TreeMap."
+                ]
+              },
+              {
+                "name": "Exception Handling",
+                "difficulty": 2,
+                "tips": [
+                  "Understand checked vs unchecked exceptions. Practice try-with-resources."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 3: Advanced Java (Week 3)",
+            "topics": [
+              {
+                "name": "Multithreading",
+                "difficulty": 4,
+                "tips": [
+                  "Focus on synchronization, volatile keyword, and producer-consumer problem."
+                ]
+              },
+              {
+                "name": "Streams API",
+                "difficulty": 4,
+                "resources": [
+                  "java-streams-telusko"
+                ],
+                "tips": [
+                  "Think in terms of map, filter, and reduce. Practice converting traditional loops into streams."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 4: Frameworks (Week 4)",
+            "topics": [
+              {
+                "name": "Spring Framework",
+                "difficulty": 5,
+                "resources": [
+                  "java-spring-boot-bro"
+                ],
+                "tips": [
+                  "**EXAM FAVORITE**. Understand Dependency Injection, Spring Boot starters, and building a simple REST API."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "DCN",
+        "priority": 3,
+        "description": "Fundamental knowledge of how networks operate. Key for system design roles.",
+        "studyFlow": [
+          {
+            "phase": "Phase 1: Fundamentals (Week 1)",
+            "topics": [
+              {
+                "name": "Network Fundamentals & OSI Model",
+                "difficulty": 2,
+                "resources": [
+                  "dcn-layers-neso"
+                ],
+                "tips": [
+                  "Memorize the 7 layers and their responsibilities. Understand the data flow from application to physical."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 2: Core Protocols (Week 2)",
+            "topics": [
+              {
+                "name": "TCP/IP Protocol Suite",
+                "difficulty": 3,
+                "resources": [
+                  "dcn-tcp-neso"
+                ],
+                "tips": [
+                  "**EXAM CRITICAL**. Know the 3-way handshake, 4-way termination, and flow control mechanisms inside out."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 3: Network Operations (Week 3)",
+            "topics": [
+              {
+                "name": "Routing Algorithms",
+                "difficulty": 3,
+                "resources": [
+                  "dcn-routing-gate"
+                ],
+                "tips": [
+                  "Differentiate between Distance Vector (RIP) and Link State (OSPF) algorithms."
+                ]
+              },
+              {
+                "name": "Error Detection and Correction",
+                "difficulty": 4,
+                "tips": [
+                  "Know how checksum and CRC work conceptually."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "DAPY",
+        "priority": 4,
+        "description": "Essential for data analysis, manipulation, and visualization tasks.",
+        "studyFlow": [
+          {
+            "phase": "Phase 1: Core Libraries (Week 1)",
+            "topics": [
+              {
+                "name": "NumPy Arrays",
+                "difficulty": 2,
+                "resources": [
+                  "python-numpy-corey"
+                ],
+                "tips": [
+                  "Focus on array creation, indexing, slicing, and universal functions (ufuncs)."
+                ]
+              },
+              {
+                "name": "Pandas DataFrames",
+                "difficulty": 2,
+                "resources": [
+                  "python-pandas-krish"
+                ],
+                "tips": [
+                  "Master data selection (.loc, .iloc), grouping (groupby), and handling missing data (isna, dropna, fillna)."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 2: Application (Week 2)",
+            "topics": [
+              {
+                "name": "Data Visualization",
+                "difficulty": 3,
+                "resources": [
+                  "python-visualization-tech"
+                ],
+                "tips": [
+                  "Learn to use Matplotlib for basic plots and Seaborn for statistical plots."
+                ]
+              },
+              {
+                "name": "Data Cleaning",
+                "difficulty": 3,
+                "tips": [
+                  "This is 80% of a data scientist's job. Practice on messy real-world datasets from Kaggle."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "AI",
+        "priority": 5,
+        "description": "Broad concepts. Focus on fundamentals unless applying for AI-specific roles.",
+        "studyFlow": [
+          {
+            "phase": "Phase 1: Foundations (Week 1)",
+            "topics": [
+              {
+                "name": "Machine Learning Basics",
+                "difficulty": 2,
+                "resources": [
+                  "ai-ml-andrew"
+                ],
+                "tips": [
+                  "Differentiate between Supervised, Unsupervised, and Reinforcement Learning. Understand overfitting."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 2: Key Concepts (Week 2)",
+            "topics": [
+              {
+                "name": "Neural Networks & Deep Learning",
+                "difficulty": 4,
+                "resources": [
+                  "ai-neural-sentdex",
+                  "ai-deeplearning-code"
+                ],
+                "tips": [
+                  "Focus on the intuition behind gradient descent and backpropagation, not just the math."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subject": "WT",
+        "priority": 6,
+        "description": "Full-stack development knowledge. Important for web developer roles.",
+        "studyFlow": [
+          {
+            "phase": "Phase 1: Frontend Basics (Week 1)",
+            "topics": [
+              {
+                "name": "CSS Styling",
+                "difficulty": 2,
+                "resources": [
+                  "web-css-kevin"
+                ],
+                "tips": [
+                  "**CRITICAL**. Master Flexbox and CSS Grid. They are fundamental to modern layout design."
+                ]
+              },
+              {
+                "name": "JavaScript Basics",
+                "difficulty": 2,
+                "resources": [
+                  "web-js-ninja"
+                ],
+                "tips": [
+                  "Understand asynchronous JavaScript (Callbacks, Promises, Async/Await) for handling API calls."
+                ]
+              }
+            ]
+          },
+          {
+            "phase": "Phase 2: Modern Development (Week 2)",
+            "topics": [
+              {
+                "name": "Frontend Frameworks (React)",
+                "difficulty": 3,
+                "resources": [
+                  "web-react-traversy"
+                ],
+                "tips": [
+                  "Understand components, props, state, and hooks (especially useState and useEffect)."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "generalExamTips": [
+      "**Priority Order:** Follow the subject priority (DSA -> Java -> DCN -> ...). Spend your time accordingly.",
+      "**Active Learning:** Don't just watch videos. For every hour of video, spend 2-3 hours coding and solving problems.",
+      "**Revision:** Revise a topic every 48 hours and then again every week to move it to long-term memory.",
+      "**Mock Tests:** Closer to the exam, take as many timed mock tests as possible to build speed and accuracy.",
+      "**Focus on Weaknesses:** Identify your weak topics from the difficulty ratings and allocate more time to them."
+    ]
+  }
+}

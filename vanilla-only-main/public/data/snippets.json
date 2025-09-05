@@ -1,0 +1,179 @@
+{
+  "snippets": [
+    {
+      "id": "java-arraylist-ops",
+      "title": "ArrayList Basic Operations",
+      "subject": "Java",
+      "language": "java",
+      "code": "import java.util.ArrayList;\nimport java.util.Collections;\n\npublic class ArrayListDemo {\n    public static void main(String[] args) {\n        ArrayList<String> list = new ArrayList<>();\n        \n        // Add elements\n        list.add(\"Java\");\n        list.add(\"Python\");\n        list.add(\"JavaScript\");\n        \n        // Access and modify\n        System.out.println(\"First: \" + list.get(0));\n        list.set(1, \"C++\");\n        \n        // Sort and search\n        Collections.sort(list);\n        boolean found = list.contains(\"Java\");\n        \n        // Iterate\n        for (String lang : list) {\n            System.out.println(lang);\n        }\n    }\n}",
+      "tags": [
+        "collections",
+        "arraylist"
+      ],
+      "runnable": false
+    },
+    {
+      "id": "java-lambda-streams",
+      "title": "Java Lambda and Streams",
+      "subject": "Java",
+      "language": "java",
+      "code": "import java.util.Arrays;\nimport java.util.List;\nimport java.util.stream.Collectors;\n\npublic class StreamDemo {\n    public static void main(String[] args) {\n        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);\n        \n        // Filter even numbers, square them, and collect\n        List<Integer> result = numbers.stream()\n            .filter(n -> n % 2 == 0)\n            .map(n -> n * n)\n            .collect(Collectors.toList());\n        \n        System.out.println(result); // [4, 16, 36, 64, 100]\n        \n        // Find sum of odd numbers\n        int sum = numbers.stream()\n            .filter(n -> n % 2 == 1)\n            .mapToInt(Integer::intValue)\n            .sum();\n        \n        System.out.println(\"Sum of odd: \" + sum);\n    }\n}",
+      "tags": [
+        "streams",
+        "lambda",
+        "functional"
+      ],
+      "runnable": false
+    },
+    {
+      "id": "dsa-linkedlist-reverse",
+      "title": "Linked List Reversal Algorithm",
+      "subject": "DSA",
+      "language": "java",
+      "code": "// Node class definition\nclass Node {\n    int data;\n    Node next;\n    \n    Node(int data) {\n        this.data = data;\n        this.next = null;\n    }\n}\n\npublic class LinkedListReverse {\n    \n    // Iterative reversal\n    public static Node reverseIterative(Node head) {\n        Node prev = null;\n        Node current = head;\n        Node next = null;\n        \n        while (current != null) {\n            next = current.next; // Store next node\n            current.next = prev; // Reverse current node's pointer\n            prev = current;      // Move prev to current\n            current = next;      // Move to next node\n        }\n        \n        return prev; // New head\n    }\n    \n    // Recursive reversal\n    public static Node reverseRecursive(Node head) {\n        if (head == null || head.next == null) {\n            return head;\n        }\n        \n        Node newHead = reverseRecursive(head.next);\n        head.next.next = head;\n        head.next = null;\n        \n        return newHead;\n    }\n    \n    // Utility method to print list\n    public static void printList(Node head) {\n        Node current = head;\n        while (current != null) {\n            System.out.print(current.data + \" \");\n            current = current.next;\n        }\n        System.out.println();\n    }\n    \n    public static void main(String[] args) {\n        // Create linked list: 1->2->3->4->5\n        Node head = new Node(1);\n        head.next = new Node(2);\n        head.next.next = new Node(3);\n        head.next.next.next = new Node(4);\n        head.next.next.next.next = new Node(5);\n        \n        System.out.println(\"Original list:\");\n        printList(head);\n        \n        // Reverse iteratively\n        head = reverseIterative(head);\n        System.out.println(\"After iterative reversal:\");\n        printList(head);\n        \n        // Reverse recursively\n        head = reverseRecursive(head);\n        System.out.println(\"After recursive reversal:\");\n        printList(head);\n    }\n}",
+      "tags": [
+        "linked-list",
+        "reversal",
+        "recursion",
+        "iterative"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "dsa-binary-search",
+      "title": "Binary Search Implementation",
+      "subject": "DSA",
+      "language": "java",
+      "code": "public class BinarySearch {\n    \n    // Iterative binary search\n    public static int binarySearchIterative(int[] arr, int target) {\n        int left = 0;\n        int right = arr.length - 1;\n        \n        while (left <= right) {\n            int mid = left + (right - left) / 2;\n            \n            if (arr[mid] == target) {\n                return mid;\n            } else if (arr[mid] < target) {\n                left = mid + 1;\n            } else {\n                right = mid - 1;\n            }\n        }\n        \n        return -1;\n    }\n    \n    // Recursive binary search\n    public static int binarySearchRecursive(int[] arr, int target, int left, int right) {\n        if (left > right) {\n            return -1;\n        }\n        \n        int mid = left + (right - left) / 2;\n        \n        if (arr[mid] == target) {\n            return mid;\n        } else if (arr[mid] < target) {\n            return binarySearchRecursive(arr, target, mid + 1, right);\n        } else {\n            return binarySearchRecursive(arr, target, left, mid - 1);\n        }\n    }\n    \n    public static void main(String[] args) {\n        int[] sortedArray = {2, 5, 8, 12, 16, 23, 38, 45, 67, 89};\n        int target = 23;\n        \n        // Iterative search\n        int resultIterative = binarySearchIterative(sortedArray, target);\n        System.out.println(\"Iterative search: Element found at index \" + resultIterative);\n        \n        // Recursive search\n        int resultRecursive = binarySearchRecursive(sortedArray, target, 0, sortedArray.length - 1);\n        System.out.println(\"Recursive search: Element found at index \" + resultRecursive);\n    }\n}",
+      "tags": [
+        "search",
+        "algorithms",
+        "binary-search",
+        "recursion"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "dsa-merge-sort",
+      "title": "Merge Sort Algorithm",
+      "subject": "DSA",
+      "language": "java",
+      "code": "public class MergeSort {\n    \n    public static void mergeSort(int[] arr) {\n        if (arr.length <= 1) {\n            return;\n        }\n        \n        int mid = arr.length / 2;\n        int[] left = new int[mid];\n        int[] right = new int[arr.length - mid];\n        \n        // Populate left and right arrays\n        System.arraycopy(arr, 0, left, 0, mid);\n        System.arraycopy(arr, mid, right, 0, arr.length - mid);\n        \n        // Recursively sort both halves\n        mergeSort(left);\n        mergeSort(right);\n        \n        // Merge the sorted halves\n        merge(arr, left, right);\n    }\n    \n    private static void merge(int[] arr, int[] left, int[] right) {\n        int i = 0, j = 0, k = 0;\n        \n        while (i < left.length && j < right.length) {\n            if (left[i] <= right[j]) {\n                arr[k++] = left[i++];\n            } else {\n                arr[k++] = right[j++];\n            }\n        }\n        \n        // Copy remaining elements\n        while (i < left.length) {\n            arr[k++] = left[i++];\n        }\n        \n        while (j < right.length) {\n            arr[k++] = right[j++];\n        }\n    }\n    \n    public static void main(String[] args) {\n        int[] arr = {64, 34, 25, 12, 22, 11, 90, 88, 76, 50};\n        \n        System.out.println(\"Original array:\");\n        for (int num : arr) {\n            System.out.print(num + \" \");\n        }\n        \n        mergeSort(arr);\n        \n        System.out.println(\"\\nSorted array:\");\n        for (int num : arr) {\n            System.out.print(num + \" \");\n        }\n    }\n}",
+      "tags": [
+        "sorting",
+        "divide-conquer",
+        "recursion",
+        "merge"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "dsa-quick-sort",
+      "title": "Quick Sort Algorithm",
+      "subject": "DSA",
+      "language": "java",
+      "code": "public class QuickSort {\n    \n    public static void quickSort(int[] arr, int low, int high) {\n        if (low < high) {\n            // Partition the array and get the pivot index\n            int pivotIndex = partition(arr, low, high);\n            \n            // Recursively sort elements before and after partition\n            quickSort(arr, low, pivotIndex - 1);\n            quickSort(arr, pivotIndex + 1, high);\n        }\n    }\n    \n    private static int partition(int[] arr, int low, int high) {\n        // Choose the rightmost element as pivot\n        int pivot = arr[high];\n        \n        // Index of smaller element\n        int i = low - 1;\n        \n        for (int j = low; j < high; j++) {\n            // If current element is smaller than or equal to pivot\n            if (arr[j] <= pivot) {\n                i++;\n                \n                // Swap arr[i] and arr[j]\n                int temp = arr[i];\n                arr[i] = arr[j];\n                arr[j] = temp;\n            }\n        }\n        \n        // Swap arr[i+1] and arr[high] (or pivot)\n        int temp = arr[i + 1];\n        arr[i + 1] = arr[high];\n        arr[high] = temp;\n        \n        return i + 1;\n    }\n    \n    public static void main(String[] args) {\n        int[] arr = {10, 7, 8, 9, 1, 5, 3, 6, 4, 2};\n        \n        System.out.println(\"Original array:\");\n        for (int num : arr) {\n            System.out.print(num + \" \");\n        }\n        \n        quickSort(arr, 0, arr.length - 1);\n        \n        System.out.println(\"\\nSorted array:\");\n        for (int num : arr) {\n            System.out.print(num + \" \");\n        }\n    }\n}",
+      "tags": [
+        "sorting",
+        "divide-conquer",
+        "quick-sort",
+        "recursion"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "dsa-bfs-traversal",
+      "title": "BFS Graph Traversal",
+      "subject": "DSA",
+      "language": "java",
+      "code": "import java.util.*;\n\npublic class BFSGraph {\n    \n    private int vertices;\n    private LinkedList<Integer>[] adjacencyList;\n    \n    @SuppressWarnings(\"unchecked\")\n    public BFSGraph(int vertices) {\n        this.vertices = vertices;\n        adjacencyList = new LinkedList[vertices];\n        \n        for (int i = 0; i < vertices; i++) {\n            adjacencyList[i] = new LinkedList<>();\n        }\n    }\n    \n    public void addEdge(int source, int destination) {\n        adjacencyList[source].add(destination);\n        // For undirected graph, add the reverse edge as well\n        // adjacencyList[destination].add(source);\n    }\n    \n    public void bfs(int startVertex) {\n        // Array to track visited vertices\n        boolean[] visited = new boolean[vertices];\n        \n        // Queue for BFS\n        Queue<Integer> queue = new LinkedList<>();\n        \n        // Mark start vertex as visited and enqueue it\n        visited[startVertex] = true;\n        queue.add(startVertex);\n        \n        System.out.println(\"BFS traversal starting from vertex \" + startVertex + \":\");\n        \n        while (!queue.isEmpty()) {\n            // Dequeue a vertex and print it\n            int currentVertex = queue.poll();\n            System.out.print(currentVertex + \" \");\n            \n            // Get all adjacent vertices of the dequeued vertex\n            for (int neighbor : adjacencyList[currentVertex]) {\n                if (!visited[neighbor]) {\n                    visited[neighbor] = true;\n                    queue.add(neighbor);\n                }\n            }\n        }\n        System.out.println();\n    }\n    \n    public static void main(String[] args) {\n        BFSGraph graph = new BFSGraph(6);\n        \n        // Add edges\n        graph.addEdge(0, 1);\n        graph.addEdge(0, 2);\n        graph.addEdge(1, 3);\n        graph.addEdge(1, 4);\n        graph.addEdge(2, 4);\n        graph.addEdge(3, 5);\n        graph.addEdge(4, 5);\n        \n        // Perform BFS starting from vertex 0\n        graph.bfs(0);\n    }\n}",
+      "tags": [
+        "graph",
+        "bfs",
+        "traversal",
+        "queue"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "python-pandas-csv",
+      "title": "Pandas CSV Data Processing",
+      "subject": "DAPY",
+      "language": "python",
+      "code": "import pandas as pd\nimport numpy as np\n\n# Read CSV file\ntry:\n    df = pd.read_csv('sales_data.csv')\n    print(\"CSV file loaded successfully!\")\n    \n    # Display basic information\n    print(\"\\nDataset Info:\")\n    print(f\"Shape: {df.shape}\")\n    print(f\"Columns: {list(df.columns)}\")\n    print(\"\\nFirst 5 rows:\")\n    print(df.head())\n    \n    # Data cleaning\n    print(\"\\nMissing values:\")\n    print(df.isnull().sum())\n    \n    # Handle missing values\n    if df.isnull().sum().any():\n        # Fill numeric columns with mean\n        numeric_cols = df.select_dtypes(include=[np.number]).columns\n        df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].mean())\n        \n        # Fill categorical columns with mode\n        categorical_cols = df.select_dtypes(include=['object']).columns\n        for col in categorical_cols:\n            df[col] = df[col].fillna(df[col].mode()[0])\n    \n    # Data analysis\n    print(\"\\nBasic Statistics:\")\n    print(df.describe())\n    \n    # Group by operations\n    if 'Category' in df.columns and 'Sales' in df.columns:\n        category_sales = df.groupby('Category')['Sales'].agg(['sum', 'mean', 'count'])\n        print(\"\\nSales by Category:\")\n        print(category_sales)\n    \n    # Filter data\n    if 'Date' in df.columns:\n        df['Date'] = pd.to_datetime(df['Date'])\n        recent_data = df[df['Date'] > '2023-01-01']\n        print(f\"\\nRecords after Jan 2023: {len(recent_data)}\")\n    \n    # Save processed data\n    df.to_csv('processed_sales_data.csv', index=False)\n    print(\"\\nProcessed data saved to 'processed_sales_data.csv'\")\n    \nexcept FileNotFoundError:\n    print(\"Error: CSV file not found. Creating sample data for demonstration...\")\n    \n    # Create sample data for demonstration\n    sample_data = {\n        'Date': pd.date_range('2023-01-01', periods=100, freq='D'),\n        'Product': np.random.choice(['A', 'B', 'C', 'D'], 100),\n        'Category': np.random.choice(['Electronics', 'Clothing', 'Books'], 100),\n        'Sales': np.random.randint(100, 5000, 100),\n        'Quantity': np.random.randint(1, 20, 100)\n    }\n    \n    df = pd.DataFrame(sample_data)\n    print(\"\\nSample data created:\")\n    print(df.head())\n    \n    # Continue with analysis as above...",
+      "tags": [
+        "pandas",
+        "csv",
+        "data-cleaning",
+        "analysis"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "python-numpy-advanced",
+      "title": "Advanced NumPy Operations",
+      "subject": "DAPY",
+      "language": "python",
+      "code": "import numpy as np\n\n# 1. Array creation and manipulation\nprint(\"=== ARRAY CREATION & MANIPULATION ===\")\n\n# Create arrays with different methods\narr1 = np.arange(1, 13).reshape(3, 4)  # 3x4 array\narr2 = np.linspace(0, 1, 12).reshape(3, 4)  # 12 numbers between 0-1\narr3 = np.random.randint(1, 100, (3, 4))  # Random integers\n\nprint(\"Array 1 (arange):\")\nprint(arr1)\nprint(\"\\nArray 2 (linspace):\")\nprint(arr2)\nprint(\"\\nArray 3 (random):\")\nprint(arr3)\n\n# 2. Advanced indexing and slicing\nprint(\"\\n=== ADVANCED INDEXING ===\")\n\n# Boolean indexing\nbool_mask = arr1 > 6\nprint(\"Boolean mask (elements > 6):\")\nprint(bool_mask)\nprint(\"Elements where mask is True:\")\nprint(arr1[bool_mask])\n\n# Fancy indexing\nrows = [0, 2]\ncols = [1, 3]\nprint(\"\\nFancy indexing [rows [0,2], cols [1,3]]:\")\nprint(arr1[rows][:, cols])\n\n# 3. Mathematical operations\nprint(\"\\n=== MATHEMATICAL OPERATIONS ===\")\n\n# Universal functions (ufuncs)\nprint(\"Square root of Array 1:\")\nprint(np.sqrt(arr1))\n\nprint(\"\\nExponential of Array 1:\")\nprint(np.exp(arr1))\n\n# Matrix operations\nprint(\"\\nMatrix multiplication (dot product):\")\nresult = np.dot(arr1, arr2.T)  # Multiply arr1 with transpose of arr2\nprint(result)\n\n# 4. Statistical operations\nprint(\"\\n=== STATISTICAL OPERATIONS ===\")\n\nprint(\"Mean of Array 1:\", np.mean(arr1))\nprint(\"Standard deviation of Array 1:\", np.std(arr1))\nprint(\"Sum of all elements in Array 1:\", np.sum(arr1))\nprint(\"Sum along columns:\", np.sum(arr1, axis=0))\nprint(\"Sum along rows:\", np.sum(arr1, axis=1))\n\n# 5. Array manipulation\nprint(\"\\n=== ARRAY MANIPULATION ===\")\n\n# Stacking arrays\nprint(\"Vertical stack:\")\nprint(np.vstack((arr1, arr3)))\n\nprint(\"\\nHorizontal stack:\")\nprint(np.hstack((arr1, arr3)))\n\n# Reshaping and flattening\nprint(\"\\nFlattened array:\")\nprint(arr1.flatten())\n\nprint(\"\\nReshaped to 2x6:\")\nprint(arr1.reshape(2, 6))",
+      "tags": [
+        "numpy",
+        "advanced",
+        "indexing",
+        "statistics"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "web-fetch-api",
+      "title": "Modern Fetch API Usage",
+      "subject": "WT",
+      "language": "javascript",
+      "code": "// GET request with error handling\nasync function fetchUserData(userId) {\n    try {\n        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);\n        \n        if (!response.ok) {\n            throw new Error(`HTTP error! status: ${response.status}`);\n        }\n        \n        const userData = await response.json();\n        console.log('User data:', userData);\n        return userData;\n    } catch (error) {\n        console.error('Fetch error:', error);\n        throw error;\n    }\n}\n\n// POST request with JSON data\nasync function createPost(postData) {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/posts', {\n            method: 'POST',\n            headers: {\n                'Content-Type': 'application/json',\n            },\n            body: JSON.stringify(postData)\n        });\n        \n        const result = await response.json();\n        console.log('Created post:', result);\n        return result;\n    } catch (error) {\n        console.error('Post creation failed:', error);\n    }\n}\n\n// Usage examples\nfetchUserData(1);\ncreatePost({ title: 'My Post', body: 'Post content', userId: 1 });",
+      "tags": [
+        "fetch",
+        "async",
+        "api"
+      ],
+      "runnable": true
+    },
+    {
+      "id": "web-css-grid",
+      "title": "CSS Grid Layout Example",
+      "subject": "WT",
+      "language": "css",
+      "code": "/* CSS Grid Container */\n.grid-container {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header header header\"\n        \"sidebar main aside\"\n        \"footer footer footer\";\n    gap: 20px;\n    min-height: 100vh;\n    padding: 20px;\n}\n\n/* Grid Items */\n.header {\n    grid-area: header;\n    background: #f0f0f0;\n    padding: 20px;\n    text-align: center;\n}\n\n.sidebar {\n    grid-area: sidebar;\n    background: #e0e0e0;\n    padding: 20px;\n    min-width: 200px;\n}\n\n.main {\n    grid-area: main;\n    background: #ffffff;\n    padding: 20px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n}\n\n.aside {\n    grid-area: aside;\n    background: #f5f5f5;\n    padding: 20px;\n    min-width: 150px;\n}\n\n.footer {\n    grid-area: footer;\n    background: #d0d0d0;\n    padding: 20px;\n    text-align: center;\n}\n\n/* Responsive Design */\n@media (max-width: 768px) {\n    .grid-container {\n        grid-template-columns: 1fr;\n        grid-template-areas:\n            \"header\"\n            \"main\"\n            \"sidebar\"\n            \"aside\"\n            \"footer\";\n    }\n}",
+      "tags": [
+        "css",
+        "grid",
+        "layout"
+      ],
+      "runnable": false
+    },
+    {
+      "id": "ai-linear-regression",
+      "title": "Simple Linear Regression",
+      "subject": "AI",
+      "language": "python",
+      "code": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import mean_squared_error, r2_score\n\n# Generate sample data\nnp.random.seed(42)\nX = np.random.randn(100, 1) * 10\ny = 2 * X.flatten() + 3 + np.random.randn(100) * 5\n\n# Split the data\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n# Create and train the model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n\n# Make predictions\ny_pred = model.predict(X_test)\n\n# Evaluate the model\nmse = mean_squared_error(y_test, y_pred)\nr2 = r2_score(y_test, y_pred)\n\nprint(f\"Coefficient: {model.coef_[0]:.2f}\")\nprint(f\"Intercept: {model.intercept_:.2f}\")\nprint(f\"Mean Squared Error: {mse:.2f}\")\nprint(f\"R² Score: {r2:.2f}\")\n\n# Plot results\nplt.figure(figsize=(10, 6))\nplt.scatter(X_test, y_test, color='blue', alpha=0.7, label='Actual')\nplt.plot(X_test, y_pred, color='red', linewidth=2, label='Predicted')\nplt.xlabel('X')\nplt.ylabel('y')\nplt.title('Linear Regression Results')\nplt.legend()\nplt.show()",
+      "tags": [
+        "machine-learning",
+        "regression",
+        "sklearn"
+      ],
+      "runnable": false
+    },
+    {
+      "id": "dcn-checksum",
+      "title": "Simple Checksum Calculation",
+      "subject": "DCN",
+      "language": "javascript",
+      "code": "function calculateChecksum(data) {\n    // Simple checksum: sum of all bytes modulo 256\n    let sum = 0;\n    \n    // Convert string to bytes and sum them\n    for (let i = 0; i < data.length; i++) {\n        sum += data.charCodeAt(i);\n    }\n    \n    // Return checksum (complement of sum modulo 256)\n    return (~sum + 1) & 0xFF;\n}\n\nfunction verifyChecksum(data, checksum) {\n    const calculatedChecksum = calculateChecksum(data);\n    const verification = (calculatedChecksum + checksum) & 0xFF;\n    return verification === 0;\n}\n\n// Example usage\nconst message = \"Hello, Network!\";\nconst checksum = calculateChecksum(message);\n\nconsole.log(`Message: ${message}`);\nconsole.log(`Checksum: ${checksum.toString(16).toUpperCase()}`);\nconsole.log(`Verification: ${verifyChecksum(message, checksum)}`);\n\n// Simulate error detection\nconst corruptedMessage = \"Hello, Netwrok!\"; // 'o' and 'r' swapped\nconsole.log(`\\nCorrupted message verification: ${verifyChecksum(corruptedMessage, checksum)}`);",
+      "tags": [
+        "checksum",
+        "error-detection",
+        "networking"
+      ],
+      "runnable": true
+    }
+  ]
+}

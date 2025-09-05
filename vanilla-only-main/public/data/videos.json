@@ -1,0 +1,328 @@
+{
+  "videos": [
+    {
+      "id": "java-oop-mosh",
+      "title": "Java OOP Concepts - Programming with Mosh",
+      "subject": "Java",
+      "tags": [
+        "OOP",
+        "fundamentals"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=pTB0EiLXUC8",
+      "notes": "Complete OOP concepts with practical examples"
+    },
+    {
+      "id": "java-streams-telusko",
+      "title": "Java 8 Streams Tutorial - Telusko",
+      "subject": "Java",
+      "tags": [
+        "streams",
+        "functional"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=t1-YZ6bF-g0",
+      "notes": "Comprehensive guide to Java 8 streams API"
+    },
+    {
+      "id": "java-spring-boot-bro",
+      "title": "Spring Boot Tutorial - Bro Code",
+      "subject": "Java",
+      "tags": [
+        "spring",
+        "framework"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=vtPkZShrvXQ",
+      "notes": "Learn Spring Boot from scratch with projects"
+    },
+    {
+      "id": "dsa-arrays-stiver",
+      "title": "Arrays & ArrayList - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "arrays",
+        "easy",
+        "beginner"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=4l7W5_l6iyc",
+      "notes": "Complete array operations, problems, and intuition by Striver"
+    },
+    {
+      "id": "dsa-strings-stiver",
+      "title": "Strings - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "strings",
+        "easy",
+        "medium"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=8ocB7OHS1hE",
+      "notes": "In-depth string manipulation and pattern matching algorithms"
+    },
+    {
+      "id": "dsa-linkedlist-stiver",
+      "title": "Linked List - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "linked list",
+        "pointers",
+        "medium"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=5kF4aDw5xx0",
+      "notes": "Singly, Doubly, Circular LL with all important problems"
+    },
+    {
+      "id": "dsa-stack-queue-stiver",
+      "title": "Stack & Queue - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "stack",
+        "queue",
+        "medium"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=GYptUgnIM_I",
+      "notes": "Implementations and problem-solving using stacks and queues"
+    },
+    {
+      "id": "dsa-recursion-stiver",
+      "title": "Recursion & Backtracking - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "recursion",
+        "backtracking",
+        "hard"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=un6PLygfXrA",
+      "notes": "Master recursion concept and popular backtracking problems"
+    },
+    {
+      "id": "dsa-trees-stiver",
+      "title": "Binary Trees - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "trees",
+        "traversals",
+        "medium"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=GYptUgnIM_I",
+      "notes": "In-order, Pre-order, Post-order, BFS, and view problems"
+    },
+    {
+      "id": "dsa-bst-stiver",
+      "title": "Binary Search Trees - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "BST",
+        "binary search",
+        "medium"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=UeRUKRJvPa4",
+      "notes": "Concepts and interview problems on BST"
+    },
+    {
+      "id": "dsa-graphs-stiver",
+      "title": "Graphs - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "graphs",
+        "BFS",
+        "DFS",
+        "hard"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=5hPfm_uqXmw",
+      "notes": "Graph traversals, shortest path, minimum spanning tree by Striver"
+    },
+    {
+      "id": "dsa-heap-stiver",
+      "title": "Heap / Priority Queue - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "heap",
+        "priority queue",
+        "medium"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=4osjsBc5Q_s",
+      "notes": "Introduction to heaps and their use in problem-solving"
+    },
+    {
+      "id": "dsa-dp-stiver",
+      "title": "Dynamic Programming - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "DP",
+        "dynamic programming",
+        "hard"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=tyB0ztf0DNY",
+      "notes": "Striver's famous DP series covering all patterns from easy to hard"
+    },
+    {
+      "id": "dsa-trie-stiver",
+      "title": "Trie Data Structure - Complete Guide - takeUForward",
+      "subject": "DSA",
+      "tags": [
+        "trie",
+        "hard",
+        "strings"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=dBGUmUQhjaM",
+      "notes": "Implementation and complex problems solved using Trie"
+    },
+    {
+      "id": "dcn-layers-neso",
+      "title": "OSI Model Explained - Neso Academy",
+      "subject": "DCN",
+      "tags": [
+        "OSI",
+        "layers"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=vv4y_uOneC0",
+      "notes": "Layer by layer breakdown of OSI model"
+    },
+    {
+      "id": "dcn-tcp-neso",
+      "title": "TCP Protocol Deep Dive - Neso Academy",
+      "subject": "DCN",
+      "tags": [
+        "TCP",
+        "protocols"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=xMtP5ZB3wSk",
+      "notes": "TCP features, handshaking, flow control"
+    },
+    {
+      "id": "dcn-routing-gate",
+      "title": "Routing Algorithms - Gate Smashers",
+      "subject": "DCN",
+      "tags": [
+        "routing",
+        "algorithms"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=rQGBisiQte8",
+      "notes": "Distance vector, link state routing"
+    },
+    {
+      "id": "python-pandas-krish",
+      "title": "Complete Pandas Tutorial - Krish Naik",
+      "subject": "DAPY",
+      "tags": [
+        "pandas",
+        "tutorial"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=vmEHCJofslg",
+      "notes": "Data manipulation and analysis with pandas"
+    },
+    {
+      "id": "python-numpy-corey",
+      "title": "NumPy Tutorial Series - Corey Schafer",
+      "subject": "DAPY",
+      "tags": [
+        "numpy",
+        "arrays"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=GB9ByFAIAH4",
+      "notes": "NumPy arrays, operations, and broadcasting"
+    },
+    {
+      "id": "python-visualization-tech",
+      "title": "Data Visualization with Python - Tech with Tim",
+      "subject": "DAPY",
+      "tags": [
+        "matplotlib",
+        "visualization"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI",
+      "notes": "Matplotlib and Seaborn for data visualization"
+    },
+    {
+      "id": "ai-ml-andrew",
+      "title": "Machine Learning Course - Andrew Ng",
+      "subject": "AI",
+      "tags": [
+        "machine learning",
+        "course"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=PPLop4L2eGk",
+      "notes": "Stanford CS229 machine learning concepts"
+    },
+    {
+      "id": "ai-neural-sentdex",
+      "title": "Neural Networks from Scratch - Sentdex",
+      "subject": "AI",
+      "tags": [
+        "neural networks",
+        "python"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Wo5dMEP_BbI",
+      "notes": "Build neural networks without frameworks"
+    },
+    {
+      "id": "ai-deeplearning-code",
+      "title": "Deep Learning Concepts - CodeEmporium",
+      "subject": "AI",
+      "tags": [
+        "deep learning",
+        "concepts"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+      "notes": "Mathematical foundations of deep learning"
+    },
+    {
+      "id": "web-css-kevin",
+      "title": "CSS Grid Complete Guide - Kevin Powell",
+      "subject": "WT",
+      "tags": [
+        "CSS",
+        "grid"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=jV8B24rSN5o",
+      "notes": "Master CSS Grid layout system"
+    },
+    {
+      "id": "web-js-ninja",
+      "title": "Modern JavaScript Course - Net Ninja",
+      "subject": "WT",
+      "tags": [
+        "JavaScript",
+        "modern"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=iWOYAxlnaww",
+      "notes": "ES6+, async/await, modules, and more"
+    },
+    {
+      "id": "web-react-traversy",
+      "title": "React Crash Course - Traversy Media",
+      "subject": "WT",
+      "tags": [
+        "React",
+        "frontend"
+      ],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+      "notes": "Learn React fundamentals and hooks"
+    }
+  ]
+}
