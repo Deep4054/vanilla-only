@@ -1,0 +1,175 @@
+{
+  "videos": [
+    {
+      "id": "java-oop-mosh",
+      "title": "Java OOP Concepts - Programming with Mosh",
+      "subject": "Java",
+      "tags": ["OOP", "fundamentals"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=pTB0EiLXUC8",
+      "notes": "Complete OOP concepts with practical examples"
+    },
+    {
+      "id": "java-streams-telusko",
+      "title": "Java 8 Streams Tutorial - Telusko",
+      "subject": "Java",
+      "tags": ["streams", "functional"],
+      "platform": "youtube", 
+      "url": "https://www.youtube.com/watch?v=t1-YZ6bF-g0",
+      "notes": "Comprehensive guide to Java 8 streams API"
+    },
+    {
+      "id": "java-spring-boot-bro",
+      "title": "Spring Boot Tutorial - Bro Code",
+      "subject": "Java",
+      "tags": ["spring", "framework"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=vtPkZShrvXQ",
+      "notes": "Learn Spring Boot from scratch with projects"
+    },
+    {
+      "id": "dsa-arrays-abdul",
+      "title": "Array Data Structure - Abdul Bari",
+      "subject": "DSA",
+      "tags": ["arrays", "fundamentals"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=AT14lCXuMKI",
+      "notes": "Deep dive into array operations and complexity"
+    },
+    {
+      "id": "dsa-sorting-love",
+      "title": "All Sorting Algorithms - Love Babbar",
+      "subject": "DSA",
+      "tags": ["sorting", "algorithms"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=WaNLJf8xzC4",
+      "notes": "Complete sorting algorithms with code"
+    },
+    {
+      "id": "dsa-trees-takeu",
+      "title": "Binary Trees Complete Course - TakeUForward",
+      "subject": "DSA",
+      "tags": ["trees", "recursion"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Z1HaUlJyTEQ",
+      "notes": "Binary trees, BST, AVL with interview questions"
+    },
+    {
+      "id": "dsa-graph-apna",
+      "title": "Graph Algorithms Complete - Apna College",
+      "subject": "DSA",
+      "tags": ["graphs", "algorithms"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=M3_pLsDdeuU",
+      "notes": "BFS, DFS, shortest path algorithms"
+    },
+    {
+      "id": "dcn-layers-neso",
+      "title": "OSI Model Explained - Neso Academy",
+      "subject": "DCN",
+      "tags": ["OSI", "layers"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=vv4y_uOneC0",
+      "notes": "Layer by layer breakdown of OSI model"
+    },
+    {
+      "id": "dcn-tcp-neso",
+      "title": "TCP Protocol Deep Dive - Neso Academy",
+      "subject": "DCN",
+      "tags": ["TCP", "protocols"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=xMtP5ZB3wSk",
+      "notes": "TCP features, handshaking, flow control"
+    },
+    {
+      "id": "dcn-routing-gate",
+      "title": "Routing Algorithms - Gate Smashers",
+      "subject": "DCN",
+      "tags": ["routing", "algorithms"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=rQGBisiQte8",
+      "notes": "Distance vector, link state routing"
+    },
+    {
+      "id": "python-pandas-krish",
+      "title": "Complete Pandas Tutorial - Krish Naik",
+      "subject": "DAPY",
+      "tags": ["pandas", "tutorial"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=vmEHCJofslg",
+      "notes": "Data manipulation and analysis with pandas"
+    },
+    {
+      "id": "python-numpy-corey",
+      "title": "NumPy Tutorial Series - Corey Schafer",
+      "subject": "DAPY",
+      "tags": ["numpy", "arrays"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=GB9ByFAIAH4",
+      "notes": "NumPy arrays, operations, and broadcasting"
+    },
+    {
+      "id": "python-visualization-tech",
+      "title": "Data Visualization with Python - Tech with Tim",
+      "subject": "DAPY",
+      "tags": ["matplotlib", "visualization"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI",
+      "notes": "Matplotlib and Seaborn for data visualization"
+    },
+    {
+      "id": "ai-ml-andrew",
+      "title": "Machine Learning Course - Andrew Ng",
+      "subject": "AI",
+      "tags": ["machine learning", "course"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=PPLop4L2eGk",
+      "notes": "Stanford CS229 machine learning concepts"
+    },
+    {
+      "id": "ai-neural-sentdex",
+      "title": "Neural Networks from Scratch - Sentdex",
+      "subject": "AI",
+      "tags": ["neural networks", "python"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=Wo5dMEP_BbI",
+      "notes": "Build neural networks without frameworks"
+    },
+    {
+      "id": "ai-deeplearning-code",
+      "title": "Deep Learning Concepts - CodeEmporium",
+      "subject": "AI",
+      "tags": ["deep learning", "concepts"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+      "notes": "Mathematical foundations of deep learning"
+    },
+    {
+      "id": "web-css-kevin",
+      "title": "CSS Grid Complete Guide - Kevin Powell",
+      "subject": "WT",
+      "tags": ["CSS", "grid"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=jV8B24rSN5o",
+      "notes": "Master CSS Grid layout system"
+    },
+    {
+      "id": "web-js-ninja",
+      "title": "Modern JavaScript Course - Net Ninja",
+      "subject": "WT",
+      "tags": ["JavaScript", "modern"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=iWOYAxlnaww",
+      "notes": "ES6+, async/await, modules, and more"
+    },
+    {
+      "id": "web-react-traversy",
+      "title": "React Crash Course - Traversy Media",
+      "subject": "WT",
+      "tags": ["React", "frontend"],
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+      "notes": "Learn React fundamentals and hooks"
+    }
+  ]
+}
